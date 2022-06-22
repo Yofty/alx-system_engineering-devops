@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -xmaF
+ls -xma --file-type
