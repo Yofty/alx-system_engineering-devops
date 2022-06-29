@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name "*.gif" | LC ALL=C sort  -f
+basename -a -s .gif $(find . -type f -iname "*.gif") | sort  
