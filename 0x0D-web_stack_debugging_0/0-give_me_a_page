@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# run achache
+
+echo "ServerName Localhost" >> /etc/apache2.conf
+service apache2 start
