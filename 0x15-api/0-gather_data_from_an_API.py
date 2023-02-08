@@ -19,7 +19,7 @@ if __name__ == "__main__":
             user_res = requests.get('{}/users/{}'.format(API, id)).json()
             todos_res = requests.get('{}/todos'.format(API)).json()
             user_name = user_res.get('name')
-            todos = list(filter(lambda x: x.get('userID') == id, todos_res))
+            todos = list(filter(lambda x: x.get('userId') == id, todos_res))
             todos_done = list(filter(lambda x: x.get('completed'), todos))
             print(
                     'Employee {} is done with tasks({}/{}):'.format(
