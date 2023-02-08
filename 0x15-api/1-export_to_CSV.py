@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""export data in the CSV format"""
+"""
+using https://jsonplaceholder.typicode.com
+returns information about employee TODO list progress
+extended to export data in the CSV format
+"""
 import re
 import requests
 import sys
