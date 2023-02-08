@@ -9,9 +9,9 @@ API = "https://jsonplaceholder.typicode.com"
 
 
 if __name__ == "__main__":
-    user_res = requests.get('{}/users'.format(API)).json()
+    users_res = requests.get('{}/users'.format(API)).json()
     todos_res = requests.get('{}/todos'.format(API)).json()
-    user_data = {}
+    users_data = {}
     for user in users_res:
         id = user.get('id')
         user_name = user.get('username')
@@ -26,4 +26,4 @@ if __name__ == "__main__":
             ))
         users_data['{}'.format(id)] = user_data
         with open('todo_all_employees.json', 'w') as file:
-            json.dump(users.data, file)
+            json.dump(users_data, file)
