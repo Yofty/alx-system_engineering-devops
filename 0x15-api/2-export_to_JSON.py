@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """ export data in the JSON format"""
+import json
 import re
 import requests
 import sys
-import json
 
 
 API = "https://jsonplaceholder.typicode.com"
