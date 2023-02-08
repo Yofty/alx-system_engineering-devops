@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-using https://jsonplaceholder.typicode.com/
+using https://jsonplaceholder.typicode.com
 returns information about employee TODO list progress
 """
 import re
@@ -23,7 +23,7 @@ if __name__ == "__main__":
             todos_done = list(filter(lambda x: x.get('completed'), todos))
             print(
                     'Employee {} is done with tasks({}/{}):'.format(
-                        user_name, 
+                        user_name,
                         len(todos_done),
                         len(todos)
                         )
