@@ -13,7 +13,7 @@ def top_ten(subreddit):
     of the first 10 hot posts listed for a given subreddit.
     """
 
-    if sunreddit is None or not isinstance(subreddit, str):
+    if subreddit is None or not isinstance(subreddit, str):
         print("None")
 
     user_agent = {'User-agent': 'Google Chrome Version 81.0.4044.129'}
