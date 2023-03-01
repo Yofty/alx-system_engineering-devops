@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-returns the number of subscribers
-"""
-
+"""returns the number of subscribers"""
 from requests import get
 
 
